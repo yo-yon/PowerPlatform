@@ -162,7 +162,7 @@
  </li>
  <li>SystemName、Value、Price、NoofLicensesにチェックを入れ「元の列名を...」のチェックを外し、OKをクリックします。<br />
   <img src="https://user-images.githubusercontent.com/62197237/116543697-238b0a00-a929-11eb-8966-cf037cb72687.png" width="500px" /><br />
-  ※Value、Price、NoofLicenses列の型が文字列になっている場合は列を選択し、右クリック、メニューから「型の変更」をクリックし「整数」を選択します。<br />
+  ※Value、Price、NoofLicenses列の型が文字列になっている場合は列を選択し、右クリック、メニューから「型の変更」をクリックし「10進数」を選択します。<br />
   <img src="https://user-images.githubusercontent.com/62197237/116543759-3e5d7e80-a929-11eb-96ea-b363c798d733.png" width="500px" /><br /><br />
  </li>
  <li>カスタム列の追加でPrice列とValue列の差を求めます。(列名をCRとする)<br />
@@ -178,7 +178,7 @@
 <ol>
  <li>SystemName、License、Value、Price、Vendor、Uses、NoofLicenses列を選択し、「ホーム」タブ、「列の削除」で「他の列を削除」をクリックします。 <br />
   <img src="https://user-images.githubusercontent.com/62197237/116544640-5da8db80-a92a-11eb-9f89-f59d031dead9.png" width="500px" /><br />
-  ※Value、Price、NoofLicenses列の型が文字列になっている場合は列を選択し、右クリック、メニューから「型の変更」をクリックし「整数」を選択します。<br /><br />
+  ※Value、Price、NoofLicenses列の型が文字列になっている場合は列を選択し、右クリック、メニューから「型の変更」をクリックし「10進数」を選択します。<br /><br />
  </li>
  <li>カスタム列の追加でコスト合計を求めます。(列名をCostSUMとする)<br />
   <img src="https://user-images.githubusercontent.com/62197237/116544664-65688000-a92a-11eb-9065-f4dc2a5cc831.png" width="500px" /><br /><br />
@@ -205,7 +205,7 @@
  </li>
  <li>Valueにチェックを入れ「元の列名を...」のチェックを外し、OKをクリックします。<br />
   <img src="https://user-images.githubusercontent.com/62197237/116545038-de67d780-a92a-11eb-9fc0-cc97eb246935.png" width="500px" /><br />
-  ※Value列の型が文字列になっている場合は列を選択し、右クリック、メニューから「型の変更」をクリックし「整数」を選択します。<br /><br /> 
+  ※Value列の型が文字列になっている場合は列を選択し、右クリック、メニューから「型の変更」をクリックし「10進数」を選択します。<br /><br /> 
  </li>
 </ol>
 ここまで処理が終わったら最後に「閉じて適用」をクリックします。<br />
