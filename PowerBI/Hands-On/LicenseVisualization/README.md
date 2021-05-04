@@ -329,7 +329,10 @@
  新しいメジャーというのは取り込んだデータを基に新たな集計結果を算出する為の定義です。<br />
  わかりやすく言えば集計されたデータ列を追加する感じです。<br />
  今回は保有しているライセンス数(LLIST NoofLicenses列)から使用済ライセンス数(ELIST SystemNameのカウント)を引き算するのでメジャーに入れる数式は下記になります。<br />
- メジャー = SUM(LLIST[NoofLicenses])-COUNTA(ELIST[SystemName])
+ メジャー = SUM(LLIST[NoofLicenses])-COUNTA(ELIST[SystemName])<br />
+ また上の画像では残数が「0」のものに対して背景色が赤になっているのがわかると思います。<br />
+ これは条件付き書式というものを利用しています。<br />
+ <img src="https://user-images.githubusercontent.com/62197237/117009827-1dc96600-ad27-11eb-9f57-8875d82bfe6b.png" width="500px" /><br />
 </p>
 
 <h3>拠点別、部署別のシステムコスト(積上棒グラフ)</h3>
