@@ -150,12 +150,42 @@
   <img src="https://user-images.githubusercontent.com/62197237/116543565-fb031000-a928-11eb-9954-91c88dfe8228.png" width="500px" /><br />
   ※補足情報<br />左
   結合の種類によって返ってくる結果は変わってきます。<br />
-  左外部：マージ画面上部に表示されているテーブルのすべてを残したうえで下部のテーブルは一致したもののみのデータを返す。<br />
-  右外部：マージ画面上部に表示されているテーブルから下部のテーブルと一致したもの+下部のテーブルのすべてのデータを返す。<br />
-  完全外部：マージ画面上部に表示されているテーブル、下部のテーブルすべてのデータを返す。<br />
-  内部：マージ画面上部に表示されているテーブルから下部のテーブルと一致したもののみのデータを返す。<br />
-  左反：マージ画面上部に表示されているテーブルで下部のテーブルと一致しないもののみのデータを返す。<br />
-  右反：マージ画面下部に表示されているテーブルで上部のテーブルと一致しないもののみのデータを返す。<br /><br />
+  <table style="border: 1px solid #CCC; border-collapse: collapse; width: 100%;">
+   <tbody>
+    <tr>
+     <td style="padding: 5px; border: 1px solid #CCC; background-color: #f4f8ff; font-weight: bold;">名称</td>
+     <td style="padding: 5px; border: 1px solid #CCC; background-color: #f4f8ff; font-weight: bold;">説明</td>
+    </tr>
+    <tr>
+     <td style="padding: 10px; border: 1px solid #CCC; background-color: #f9fcfe;">左外部</td>
+     <td style="padding: 10px; border: 1px solid #CCC; background-color: #f9fcfe;">マージ画面上部に表示されているテーブルのすべてを残したうえで下部のテーブルは一致したもののみのデータを返す。</td>
+    </tr>
+    <tr>
+     <td style="padding: 10px; border: 1px solid #CCC; background-color: #f9fcfe;">右外部</td>
+     <td style="padding: 10px; border: 1px solid #CCC; background-color: #f9fcfe;">マージ画面上部に表示されているテーブルから下部のテーブルと一致したもの+下部のテーブルのすべてのデータを返す。</td>
+    </tr>
+    <tr>
+     <td style="padding: 10px; border: 1px solid #CCC; background-color: #f9fcfe;">完全外部</td>
+     <td style="padding: 10px; border: 1px solid #CCC; background-color: #f9fcfe;">マージ画面上部に表示されているテーブル、下部のテーブルすべてのデータを返す。</td>
+    </tr>
+    <tr>
+     <td style="padding: 10px; border: 1px solid #CCC; background-color: #f9fcfe;">内部</td>
+     <td style="padding: 10px; border: 1px solid #CCC; background-color: #f9fcfe;">マージ画面上部に表示されているテーブルから下部のテーブルと一致したもののみのデータを返す。</td>
+    </tr>
+    <tr>
+     <td style="padding: 10px; border: 1px solid #CCC; background-color: #f9fcfe;">左反</td>
+     <td style="padding: 10px; border: 1px solid #CCC; background-color: #f9fcfe;">マージ画面上部に表示されているテーブルで下部のテーブルと一致しないもののみのデータを返す。</td>
+    </tr>
+    <tr>
+     <td style="padding: 10px; border: 1px solid #CCC; background-color: #f9fcfe;">右外部</td>
+     <td style="padding: 10px; border: 1px solid #CCC; background-color: #f9fcfe;">マージ画面上部に表示されているテーブルから下部のテーブルと一致したもの+下部のテーブルのすべてのデータを返す。</td>
+    </tr>
+    <tr>
+     <td style="padding: 10px; border: 1px solid #CCC; background-color: #f9fcfe;">右反</td>
+     <td style="padding: 10px; border: 1px solid #CCC; background-color: #f9fcfe;">マージ画面下部に表示されているテーブルで上部のテーブルと一致しないもののみのデータを返す。</td>
+    </tr>
+   </tbody>
+  </table>
  </li>
  <li>追加されたLLIST列の矢印マークをクリックします。<br />
   <img src="https://user-images.githubusercontent.com/62197237/116543606-05bda500-a929-11eb-98ac-1d51ca0eb1e4.png" width="500px" /><br /><br />
@@ -249,11 +279,8 @@
 <img src="https://user-images.githubusercontent.com/62197237/116547772-49ff7400-a92e-11eb-9fca-bd2bef2a39ce.png" width="500px" /><br />
 <p>このマトリクスにはELISTのデータを使用します。<br />
  行：SystemName<br />
- 列：Office <br />
- ：Department<br />
- 値：Value 　<br />
- ：CR 　<br />
- ：NoofLicensesのカウント<br />
+ 列：Office、Department<br />
+ 値：Value、CR、NoofLicensesのカウント<br />
  ※NoofLicensesをカウントにするには下記の手順でできます。
 <ol>
  <li>フィールドの矢印をクリックします。<br />
@@ -324,8 +351,7 @@
 <p><img src="https://user-images.githubusercontent.com/62197237/116549352-51278180-a930-11eb-834d-115aaa8160ee.png" width="500px" /><br />
  このマトリクスにはELISTとLLISTのデータ、また残数を算出する為にメジャーを使用します。<br />
  行：SystemName(LLIST)<br />
- 値：SystemNameのカウント(ELIST) 　<br />
- ：新しいメジャー(下記参照) <br />
+ 値：SystemNameのカウント(ELIST)、新しいメジャー(下記参照) <br />
  新しいメジャーというのは取り込んだデータを基に新たな集計結果を算出する為の定義です。<br />
  わかりやすく言えば集計されたデータ列を追加する感じです。<br />
  今回は保有しているライセンス数(LLIST NoofLicenses列)から使用済ライセンス数(ELIST SystemNameのカウント)を引き算するのでメジャーに入れる数式は下記になります。<br />
@@ -338,8 +364,7 @@
 <h3>拠点別、部署別のシステムコスト(積上棒グラフ)</h3>
 <p><img src="https://user-images.githubusercontent.com/62197237/116549393-60a6ca80-a930-11eb-87d7-d5f7f808e3a3.png" width="500px" /><br />
  このグラフにはELISTのデータを使用します。<br />
- 軸：Office 　<br />
- ：Department <br />
+ 軸：Office、Department <br />
  凡例：SystemName<br />
  値：Value<br />
  軸にOfficeとDepartmentを入れることによってドリルダウンで切り替えができます。
@@ -378,8 +403,8 @@
 <h3>拠点別・部署別携帯コスト(折れ線グラフ+積上棒グラフ)</h3>
 <p><img src="https://user-images.githubusercontent.com/62197237/116549608-a9f71a00-a930-11eb-9f6f-a5ba599de347.png" width="500px" /><br />
  このカードにはOMLISTのデータを使用します。<br />
- 共有の軸：Office 　 　　<br />
- ：Dep<br />縦棒：Career<br />
+ 共有の軸：Office、Dep<br />
+ 縦棒：Career<br />
  各棒の値：Value<br />
  線の値：Titleのカウント
 </p>
@@ -388,8 +413,7 @@
 <p><img src="https://user-images.githubusercontent.com/62197237/116549734-d0b55080-a930-11eb-9bb6-49d5954fcac9.png" width="500px" /><br />
  このマトリクスにはOMLISTのデータを使用します。<br />
  行：Career<br />
- 列：Office 　<br />
- ：Department<br />
+ 列：Office、Department<br />
  値：Value<br />
  列にOfficeとDepartmentを入れることによってドリルダウンで切り替えができます。
 </p>
@@ -398,8 +422,7 @@
 <p><img src="https://user-images.githubusercontent.com/62197237/116549757-d9a62200-a930-11eb-9109-38da60cad35b.png" width="500px" /><br />
  このマトリクスにはOMLISTのデータを使用します。<br />
  行：Model<br />
- 列：Office 　<br />
- ：Department<br />
+ 列：Office、Department<br />
  値：Value<br />
  列にOfficeとDepartmentを入れることによってドリルダウンで切り替えができます。
 </p>
@@ -408,8 +431,7 @@
 <p><img src="https://user-images.githubusercontent.com/62197237/116549794-e591e400-a930-11eb-8cd4-c481c467e468.png" width="500px" /><br />
  このマトリクスにはOMLISTのデータを使用します。<br />
  行：Model<br />
- 列：Office 　<br />
- ：Department<br />
+ 列：Office、Department<br />
  値：Tethering <br />
  列にOfficeとDepartmentを入れることによってドリルダウンで切り替えができます。<br />
 </p>
