@@ -177,10 +177,6 @@
      <td style="padding: 10px; border: 1px solid #CCC; background-color: #f9fcfe;">マージ画面上部に表示されているテーブルで下部のテーブルと一致しないもののみのデータを返す。</td>
     </tr>
     <tr>
-     <td style="padding: 10px; border: 1px solid #CCC; background-color: #f9fcfe;">右外部</td>
-     <td style="padding: 10px; border: 1px solid #CCC; background-color: #f9fcfe;">マージ画面上部に表示されているテーブルから下部のテーブルと一致したもの+下部のテーブルのすべてのデータを返す。</td>
-    </tr>
-    <tr>
      <td style="padding: 10px; border: 1px solid #CCC; background-color: #f9fcfe;">右反</td>
      <td style="padding: 10px; border: 1px solid #CCC; background-color: #f9fcfe;">マージ画面下部に表示されているテーブルで上部のテーブルと一致しないもののみのデータを返す。</td>
     </tr>
