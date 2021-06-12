@@ -419,7 +419,7 @@
  このマトリクスにはOMLISTのデータを使用します。<br />
  行：Model<br />
  列：Office、Department<br />
- 値：Value<br />
+ 値：Titleのカウント<br />
  列にOfficeとDepartmentを入れることによってドリルダウンで切り替えができます。
 </p>
 
