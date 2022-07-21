@@ -59,8 +59,8 @@ Microsoft Formsを利用すると簡単にアンケートの作成ができる�
   <img src="https://user-images.githubusercontent.com/62197237/180109627-48abf1c7-ea1a-449e-88b4-75b988bca9c3.png" width="500px" />
 - フロー名に任意の名前を付け、Microsoft Formsコネクタの「新しい応答が送信されるとき」を選択し、作成をクリックして下さい。</li>
   <img src="https://user-images.githubusercontent.com/62197237/180109747-e5de80d4-f23c-4424-b6f0-36ce45edd865.png" width="500px" />
-- トリガーが作成されるのでフォームIDで先ほど作成したFormsアンケートを選択</li>
-- ※選択肢に表示されない場合  
+- トリガーが作成されるのでフォームIDで先ほど作成したFormsアンケートを選択  
+  ちなみに選択肢に出てこない場合は下記手順で追加  
   - FormsのIDをコピー  
     <img src="https://user-images.githubusercontent.com/62197237/180111001-7d49e995-df21-437c-8932-ee8c62ca10ab.png" width="500px" />  
   - カスタム項目の追加」をクリック  
