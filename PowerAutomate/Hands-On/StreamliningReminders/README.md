@@ -94,7 +94,7 @@
 <li>「Apply to each」の中の「アクションの追加」をクリック</li>
 <li>Microsoft Teamsコネクタから「チャットやチャネルにアダプティブカードを投稿する」を選択</li>
 <p><img src="https://user-images.githubusercontent.com/62197237/180121688-19a8e895-a9da-4316-a982-51d86ec89627.png" width="500px" /></p>
-<li>下記のように設定<br />投稿者：「フローボット」を選択<br />投稿先：「フローボットとチャットするを選択」<br />Recipient：「表内に存在する行を一覧表示」から「user」を選択<br />アダプティブカード：任意で設定<br />※参考：</li>
+<li>下記のように設定<br />投稿者：「フローボット」を選択<br />投稿先：「フローボットとチャットするを選択」<br />Recipient：「表内に存在する行を一覧表示」から「user」を選択<br />アダプティブカード：任意で設定<br />※参考：https://gist.github.com/yo-yon/f5453a79a3812c3e32c98c56b2915eec.js</li>
 
   
   
