@@ -82,16 +82,22 @@ Microsoft Formsを利用すると簡単にアンケートの作成ができる�
   キー値：Responders' Emailを選択  
   Status：「○」と入力  
   <img src="https://user-images.githubusercontent.com/62197237/180113693-c1eebe1c-a15d-4aaf-a4c7-549231c591d5.png" width="500px" />  
+- テスト実行  
+  <img src="https://user-images.githubusercontent.com/62197237/180145601-e19ca17f-b0b5-493b-b3d8-e5ea64c2d516.png" width="500px" />  
+  <img src="https://user-images.githubusercontent.com/62197237/180145613-2f4c0b35-9393-4526-a78b-bb05ab7d5a02.png" width="500px" />  
+- 対象のFormsアンケートに回答し、正常に動作するか確認  
+  <img src="https://user-images.githubusercontent.com/62197237/180145867-5f5e2af5-5160-428c-bfb8-13e90f2d475c.png" width="500px" />  
+  <img src="https://user-images.githubusercontent.com/62197237/180145880-2889fb95-d83e-477c-9ef1-adb3473acba1.png" width="500px" />  
 アンケート回答結果取得フローの作成は以上です。  
 ***  
-  
+
 #### リマインドフロー作成  
 - マイフローを選択し「新しいフロー」から「インスタント クラウドフロー」をクリック  
   <img src="https://user-images.githubusercontent.com/62197237/180115693-3d414023-96cc-414f-9f2d-e554f4e9023c.png" width="500px" />  
 - フロー名に任意の名前を付け、「手動でフローをトリガーします」を選択し、作成をクリックして下さい。  
   <img src="https://user-images.githubusercontent.com/62197237/180115699-929aa2bd-6758-4986-8ef0-63a4b19bad87.png" width="500px" />     
 - 現在の時刻のアクションを追加します。これは後工程で使用します。  
-  特に設定する項目はありません。　　
+  特に設定する項目はありません。  
   <img src="https://user-images.githubusercontent.com/62197237/180115719-edd348bd-99da-4f57-ba36-6f3a5538c3ab.png" width="500px" />　　
 - 前段で取得した「現在の時刻」はUTC時間なので「タイムゾーンの変換」で日本時間に変換するアクションを追加。  
   下記のように設定  
@@ -104,10 +110,10 @@ Microsoft Formsを利用すると簡単にアンケートの作成ができる�
 - 次にExcel Online(Business)コネクタから「表内に存在する行を一覧表示」を選択  
   <img src="https://user-images.githubusercontent.com/62197237/180116459-0894b86f-e603-4e44-8f2b-1a60eb93546d.png" width="500px" />
 - 下記のように設定  
-  基準時間：現在の時刻を選択  
-  変換元のタイムゾーン：(UTC)協定世界時  
-  変換先のタイムゾーン：(UTC+9:00)大阪、札幌、東京  
-  書式設定文字列：お好みで  
+  場所：受け皿用のExcelデータの格納場所を選択  
+  ドキュメンドライブラリ：上記と同様  
+  ファイル：対象のファイルを選択   
+  テーブル：対象データのテーブルを選択「remind」  
   <img src="https://user-images.githubusercontent.com/62197237/180117629-d465c7ed-a8aa-4b8e-8294-90b216a4d075.png" width="500px" />  
 - 「表内に存在する行を一覧表示」の右上の三点リーダーをクリックし「設定」をクリック  
   <img src="https://user-images.githubusercontent.com/62197237/180117657-998b02bb-df1a-46b7-873b-f5bf57713513.png" width="500px" />  
@@ -138,21 +144,18 @@ Microsoft Formsを利用すると簡単にアンケートの作成ができる�
   <img src="https://user-images.githubusercontent.com/62197237/180121677-c458beb3-8e5a-4246-8aac-da625674a8a4.png" width="500px" />  
 - 「Apply to each」の中の「アクションの追加」をクリック  
 - Microsoft Teamsコネクタから「チャットやチャネルにアダプティブカードを投稿する」を選択  
-  <img src="https://user-images.githubusercontent.com/62197237/180121688-19a8e895-a9da-4316-a982-51d86ec89627.png" width="500px" /></p>
+  <img src="https://user-images.githubusercontent.com/62197237/180121688-19a8e895-a9da-4316-a982-51d86ec89627.png" width="500px" />  
 - 下記のように設定  
   投稿者：「フローボット」を選択  
   投稿先：「フローボットとチャットするを選択」  
   Recipient：「表内に存在する行を一覧表示」から「user」を選択  
   アダプティブカード：任意で設定  
-  ※参考：  
-  ```
-  https://gist.github.com/yo-yon/f5453a79a3812c3e32c98c56b2915eec.js  
-  ```
-  
-  
-  
-  
-</ul>
-
-<p><img src="aaa" width="500px" /></p>
-
+  <img src="https://user-images.githubusercontent.com/62197237/180141357-4ae94acf-82e6-4f99-9b16-4a6b7d749f70.png" width="500px" /></p>
+  [※参考：アダプティブカードJSON](https://gist.github.com/yo-yon/f5453a79a3812c3e32c98c56b2915eec)  
+- 一旦、フロー結果の受け皿用ExcelデータのStatus列で自分の行を残して「○」を入力し、テスト実行  
+  <img src="https://user-images.githubusercontent.com/62197237/180143563-61614971-4a84-46e0-9eee-8a8a77e5f7e7.png" width="500px" /></p>
+ 
+以上でハンズオン終了です。  
+お疲れ様でした！  
+<img src="https://user-images.githubusercontent.com/62197237/180142085-0c65b3a5-caf9-4001-b1d9-367ed83c5ba4.png" width="500px" />
+<img src="https://user-images.githubusercontent.com/62197237/180146269-738c5dc7-bd2d-406f-b573-e5751db7d064.png" width="500px" />  
