@@ -47,11 +47,40 @@
 <li>フォームDには先程のFormsアンケートIDを選択もしくは入力、応答IDには「新しい応答が送信されるとき」で作成された応答IDを選択</li>
 <p><img src="https://user-images.githubusercontent.com/62197237/180111832-2601ed23-3340-4adf-a356-d4e2a2b53ad4.png" width="500px" /></p>  
 <li>次にExcel Online(Business)コネクタから「行の更新」を選択</li>
-<p><img src="https://user-images.githubusercontent.com/62197237/180111832-2601ed23-3340-4adf-a356-d4e2a2b53ad4.png" width="500px" /></p>  
+<p><img src="https://user-images.githubusercontent.com/62197237/180113519-3371e881-046c-4229-8c19-922fc3d474fc.png" width="500px" /></p>  
 <li>下記のように設定<br />場所：受け皿用のExcelデータの格納場所を選択<br />ドキュメンドライブラリ：上記と同様<br />ファイル：対象のファイルを選択<br />テーブル：対象データのテーブルを選択<br />キー列：Userを選択<br />キー値：Responders' Emailを選択<br />Status：「○」と入力<br /></li>
-<p><img src="https://user-images.githubusercontent.com/62197237/180111832-2601ed23-3340-4adf-a356-d4e2a2b53ad4.png" width="500px" /></p>  
-
-
+<p><img src="https://user-images.githubusercontent.com/62197237/180113693-c1eebe1c-a15d-4aaf-a4c7-549231c591d5.png" width="500px" /></p>  
+<p>アンケート回答結果取得フローの作成は以上です。
 </ul>
-<h4>リマインドフロー作成</h4>
+
+<h4>リマインドフロー作成</h4>  
+<ul>
+<li>マイフローを選択し「新しいフロー」から「インスタント クラウドフロー」をクリック</li>
+<p><img src="https://user-images.githubusercontent.com/62197237/180115693-3d414023-96cc-414f-9f2d-e554f4e9023c.png" width="500px" /></p> 
+<li>フロー名に任意の名前を付け、「手動でフローをトリガーします」を選択し、作成をクリックして下さい。</li>
+<p><img src="https://user-images.githubusercontent.com/62197237/180115699-929aa2bd-6758-4986-8ef0-63a4b19bad87.png" width="500px" /></p>   
+<li>現在の時刻のアクションを追加します。これは後工程で使用します。<br />特に設定する項目はありません。</li>
+<p><img src="https://user-images.githubusercontent.com/62197237/180115719-edd348bd-99da-4f57-ba36-6f3a5538c3ab.png" width="500px" /></p>   
+<li>前段で取得した「現在の時刻」はUTC時間なので「タイムゾーンの変換」で日本時間に変換するアクションを追加。<br />下記のように設定<br />基準時間：現在の時刻を選択<br />変換元のタイムゾーン：(UTC)協定世界時<br />変換先のタイムゾーン：(UTC+9:00)大阪、札幌、東京<br />書式設定文字列：お好みで</li>
+<p><img src="https://user-images.githubusercontent.com/62197237/180115729-d99ca7f4-cd93-4455-96cf-196c16faabaf.png" width="500px" /></p>
+<p><img src="https://user-images.githubusercontent.com/62197237/180115898-137efdfd-6c2b-4ffb-8468-37cd432326c6.png" width="500px" /></p>   
+<li>次にExcel Online(Business)コネクタから「表内に存在する行を一覧表示」を選択</li>
+<p><img src="https://user-images.githubusercontent.com/62197237/180116459-0894b86f-e603-4e44-8f2b-1a60eb93546d.png" width="500px" /></p>
+<li>下記のように設定<br />基準時間：現在の時刻を選択<br />変換元のタイムゾーン：(UTC)協定世界時<br />変換先のタイムゾーン：(UTC+9:00)大阪、札幌、東京<br />書式設定文字列：お好みで</li>
+<p><img src="https://user-images.githubusercontent.com/62197237/180117629-d465c7ed-a8aa-4b8e-8294-90b216a4d075.png" width="500px" /></p>
+<li>「表内に存在する行を一覧表示」の右上の三点リーダーをクリックし「設定」をクリック</li>
+<p><img src="https://user-images.githubusercontent.com/62197237/180117657-998b02bb-df1a-46b7-873b-f5bf57713513.png" width="500px" /></p>
+<li>改ページを「オン」にして、しきい値を「500」にし、完了をクリック</li>
+<p><img src="https://user-images.githubusercontent.com/62197237/180117678-7f686bd3-61d2-457e-a95a-fd0c359b8a27.png" width="500px" /></p>
+<li>「詳細オプションを表示する」をクリックしてにして、フィルタークエリに「Status ne '○'」と入力</li>
+<p><img src="https://user-images.githubusercontent.com/62197237/180117686-42aa4625-8462-47a9-8cbd-192b3023369b.png" width="500px" /></p>
+<li>「詳細オプションを表示する」をクリックしてにして、フィルタークエリに「Status ne '○'」と入力</li>
+<p><img src="aaa" width="500px" /></p>
+  
+
+  
+</ul>
+
+<p><img src="aaa" width="500px" /></p>   
+
 
