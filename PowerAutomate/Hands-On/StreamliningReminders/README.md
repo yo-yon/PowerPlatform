@@ -147,14 +147,28 @@ Microsoft Formsを利用すると簡単にアンケートの作成ができる�
   <img src="https://user-images.githubusercontent.com/62197237/180121688-19a8e895-a9da-4316-a982-51d86ec89627.png" width="500px" />  
 - 下記のように設定  
   投稿者：「フローボット」を選択  
-  投稿先：「フローボットとチャットするを選択」  
+  投稿先：「フローボットとチャットする」を選択  
   Recipient：「表内に存在する行を一覧表示」から「user」を選択  
   アダプティブカード：任意で設定  
-  <img src="https://user-images.githubusercontent.com/62197237/180141357-4ae94acf-82e6-4f99-9b16-4a6b7d749f70.png" width="500px" /></p>
+  <img src="https://user-images.githubusercontent.com/62197237/180141357-4ae94acf-82e6-4f99-9b16-4a6b7d749f70.png" width="500px" />  
   [※参考：アダプティブカードJSON](https://gist.github.com/yo-yon/f5453a79a3812c3e32c98c56b2915eec)  
 - 一旦、フロー結果の受け皿用ExcelデータのStatus列で自分の行を残して「○」を入力し、テスト実行  
-  <img src="https://user-images.githubusercontent.com/62197237/180143563-61614971-4a84-46e0-9eee-8a8a77e5f7e7.png" width="500px" /></p>
- 
+  ※Status列に「○」を入れずに実行すると300名分の通知が飛んでしまうので注意！　　
+  特に自分のアドレスを全行に入れてると300件通知が来ます(笑)  
+  <img src="https://user-images.githubusercontent.com/62197237/180143563-61614971-4a84-46e0-9eee-8a8a77e5f7e7.png" width="500px" />  
+- 通知が来たことを確認出来たらフローのトリガー「手動でフローをトリガーします」を削除  
+  <img src="https://user-images.githubusercontent.com/62197237/180328439-e23a26c5-44f8-49dc-ac3e-96a4fab50a7b.png" width="500px" />  
+- 「スケジュール」から「繰り返し」を選択  
+  <img src="https://user-images.githubusercontent.com/62197237/180328471-d9d86c28-68b5-4026-a4b3-086d89b22c8c.png" width="500px" />  
+- 下記のように設定  
+  間隔：「1」と入力  
+  頻度：「週」を選択  
+  タイムゾーン：「(UTC+9:00)大阪、札幌、東京 」を選択  
+  設定曜日：「水曜日」「金曜日」を選択  
+  設定時刻(時間)：「9」と入力  
+  設定時刻(分)：「00」と入力  
+  <img src="https://user-images.githubusercontent.com/62197237/180328499-b23686b4-8284-4755-a25a-e88c28181c79.png" width="500px" />  
+
 以上でハンズオン終了です。  
 お疲れ様でした！  
 <img src="https://user-images.githubusercontent.com/62197237/180142085-0c65b3a5-caf9-4001-b1d9-367ed83c5ba4.png" width="500px" />
