@@ -48,7 +48,7 @@
 <p><img src="https://user-images.githubusercontent.com/62197237/180111832-2601ed23-3340-4adf-a356-d4e2a2b53ad4.png" width="500px" /></p>  
 <li>次にExcel Online(Business)コネクタから「行の更新」を選択</li>
 <p><img src="https://user-images.githubusercontent.com/62197237/180113519-3371e881-046c-4229-8c19-922fc3d474fc.png" width="500px" /></p>  
-<li>下記のように設定<br />場所：受け皿用のExcelデータの格納場所を選択<br />ドキュメンドライブラリ：上記と同様<br />ファイル：対象のファイルを選択<br />テーブル：対象データのテーブルを選択<br />キー列：Userを選択<br />キー値：Responders' Emailを選択<br />Status：「○」と入力<br /></li>
+<li>下記のように設定<br />場所：受け皿用のExcelデータの格納場所を選択<br />ドキュメンドライブラリ：上記と同様<br />ファイル：対象のファイルを選択<br />テーブル：対象データのテーブルを選択「remind」<br />キー列：Userを選択<br />キー値：Responders' Emailを選択<br />Status：「○」と入力<br /></li>
 <p><img src="https://user-images.githubusercontent.com/62197237/180113693-c1eebe1c-a15d-4aaf-a4c7-549231c591d5.png" width="500px" /></p>  
 <p>アンケート回答結果取得フローの作成は以上です。
 </ul>
@@ -74,13 +74,31 @@
 <p><img src="https://user-images.githubusercontent.com/62197237/180117678-7f686bd3-61d2-457e-a95a-fd0c359b8a27.png" width="500px" /></p>
 <li>「詳細オプションを表示する」をクリックしてにして、フィルタークエリに「Status ne '○'」と入力</li>
 <p><img src="https://user-images.githubusercontent.com/62197237/180117686-42aa4625-8462-47a9-8cbd-192b3023369b.png" width="500px" /></p>
-<li>「詳細オプションを表示する」をクリックしてにして、フィルタークエリに「Status ne '○'」と入力</li>
-<p><img src="aaa" width="500px" /></p>
-  
+<li>次にExcel Online(Business)コネクタから「行の取得」を選択</li>
+<p><img src="https://user-images.githubusercontent.com/62197237/180118917-ee29b9cd-8d92-4517-ab8d-d8bb9d6270f0.png" width="500px" /></p>  
+<li>下記のように設定<br />場所：受け皿用のExcelデータの格納場所を選択<br />ドキュメンドライブラリ：上記と同様<br />ファイル：対象のファイルを選択<br />テーブル：対象データのテーブルを選択「info」<br />キー列：TableKeyを選択<br />キー値：「1」と入力</li>
+<p><img src="https://user-images.githubusercontent.com/62197237/180118923-9fd2278d-9d86-4169-9e11-524b2310d146.png" width="500px" /></p>
+<li>コントロールから「Apply to each」を選択</li>
+<p><img src="https://user-images.githubusercontent.com/62197237/180119926-6892996c-ed28-4274-ae80-cf547b2eadbd.png" width="500px" /></p>   
+<li>「以前の手順から出力を選択」で「表内に存在する行を一覧表示」から「value」を選択</li>
+<p><img src="https://user-images.githubusercontent.com/62197237/180119973-d4e21347-324f-4364-a82f-e4982affba16.png" width="500px" /></p>   
+<p><img src="https://user-images.githubusercontent.com/62197237/180119984-26ac333e-bfcd-484f-bf99-822e98cc67e5.png" width="500px" /></p>   
+<li>「Apply to each」の中の「アクションの追加」をクリック</li>
+<p><img src="https://user-images.githubusercontent.com/62197237/180120372-5145acc9-2191-474d-b6f7-18f4e002d0a8.png" width="500px" /></p>
+<li>Microsoft Teamsコネクタから「ユーザーの@mentionトークンを取得する」を選択</li>
+<p><img src="https://user-images.githubusercontent.com/62197237/180121667-1de86767-533c-4bb0-bec2-1d0ca87be516.png" width="500px" /></p>
+<li>「ユーザー」欄に「表内に存在する行を一覧表示」から「user」を選択</li>
+<p><img src="https://user-images.githubusercontent.com/62197237/180121677-c458beb3-8e5a-4246-8aac-da625674a8a4.png" width="500px" /></p>
+<li>「Apply to each」の中の「アクションの追加」をクリック</li>
+<li>Microsoft Teamsコネクタから「チャットやチャネルにアダプティブカードを投稿する」を選択</li>
+<p><img src="https://user-images.githubusercontent.com/62197237/180121688-19a8e895-a9da-4316-a982-51d86ec89627.png" width="500px" /></p>
 
+
+  
+  
+  
   
 </ul>
 
-<p><img src="aaa" width="500px" /></p>   
-
+<p><img src="aaa" width="500px" /></p>
 
