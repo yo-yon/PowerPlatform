@@ -12,7 +12,7 @@ Microsoft Formsを利用すると簡単にアンケートの作成ができる�
 収集する側は結構未回答者の抽出に苦労するんですよね。  
 わたるふさんは「いいね」した人を集計して「いいね」していない人に対してチャネルでメンションするというアプローチをしていました。  
 <img src="https://user-images.githubusercontent.com/62197237/180134921-d8034425-5fa2-42d3-9093-d677f242f9c2.png" width="500px" />  
-わたるふさんの資料は[こちら！](https://www.docswell.com/assets/libs/docswell-embed/docswell-embed.min.js  )  
+わたるふさんの資料は[こちら！](https://www.docswell.com/s/wataruf01/KRM6W5-2022-05-28-220731)  
 
   
 今回はわたるふさんと基本的なアプローチは同じですが少し違った方法についてハンズオンをしていきます。  
